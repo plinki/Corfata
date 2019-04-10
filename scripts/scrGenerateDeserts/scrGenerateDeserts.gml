@@ -1,6 +1,6 @@
 repeat(25) {
 	var startx, starty, xx, yy;
-	var total_forest_tiles = 0;
+	var total_desert_tiles = 0;
 	found = false;
 	end_found = false;
 
@@ -18,7 +18,7 @@ repeat(25) {
 
 
 
-	while (total_forest_tiles < 350) {
+	while (total_desert_tiles < 350) {
 		randomize();
 		general_direction = irandom(3);
 				
@@ -29,23 +29,19 @@ repeat(25) {
 				
 		if (ds_grid_get(map_er, xx, yy)) == "ground" {
 			ds_grid_set(map_er, xx, yy, "desert");
-			total_forest_tiles++;
+			total_desert_tiles++;
 			continue;
 		
 		} else if (ds_grid_get(map_er, xx, yy)) == "ocean" || (ds_grid_get(map_er, xx, yy)) == "water" || (ds_grid_get(map_er, xx, yy)) == "forest"
 		|| (ds_grid_get(map_er, xx, yy)) == "mountain" {
 			if (ds_grid_get(map_er, xx, yy-2)) == "ground" {
 				yy -= 1;
-				show_debug_message("up");
 			} else if (ds_grid_get(map_er, xx+2, yy)) == "ground" {
 				xx += 1;
-				show_debug_message("right");
 			} else if (ds_grid_get(map_er, xx, yy+2)) == "ground" {
 				yy += 1;
-				show_debug_message("down");
 			} else if (ds_grid_get(map_er, xx-2, yy)) == "ground" {
 				xx -= 1;
-				show_debug_message("left");
 			} else {
 				break;	
 			}

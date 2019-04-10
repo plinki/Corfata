@@ -143,6 +143,22 @@
             }
         },
         {
+            "Key": "5ffcd77c-b050-4ed2-b1c0-fa8343274009",
+            "Value": {
+                "id": "92dff71a-c000-4823-b9e1-0c360069bad3",
+                "resourcePath": "objects\\MenuController\\MenuController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6b0c5dc2-d1e7-47fb-af29-f8fc23ab948b",
+            "Value": {
+                "id": "df672783-0e82-402e-a845-d2480bbf32e2",
+                "resourcePath": "views\\6b0c5dc2-d1e7-47fb-af29-f8fc23ab948b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "76feb1eb-76b7-4c06-b4ee-4391ea39f56c",
             "Value": {
                 "id": "009488f0-fa0f-4774-92c8-3c4aa52b94fa",
@@ -260,6 +276,22 @@
                 "id": "e6270a27-2952-491f-9c40-ad04361d3da6",
                 "resourcePath": "views\\aacda7e6-b34a-473a-a7f2-86a0e0b3c2ed.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ac48def3-3d68-4d07-8c2a-2b8564c5abf6",
+            "Value": {
+                "id": "ec905c1f-a8c4-4c75-9bd8-2c7509b5005f",
+                "resourcePath": "objects\\SurfaceController\\SurfaceController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b635e0fe-5bd3-438d-a381-0f86386cdaf7",
+            "Value": {
+                "id": "4685d516-c3e9-4a79-90e2-0b13856686b9",
+                "resourcePath": "scripts\\scrSpawnTextGUI\\scrSpawnTextGUI.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -405,7 +437,8 @@
         "a0682e9a-d23e-4b09-816a-9658287d2a5e",
         "9f146db0-4219-48de-9ad8-068389b58d1f",
         "00c22083-4a99-4661-a698-4ae0242c3261",
-        "3e688e89-167d-486f-bd79-c51cf5bfac1f"
+        "3e688e89-167d-486f-bd79-c51cf5bfac1f",
+        "b635e0fe-5bd3-438d-a381-0f86386cdaf7"
     ],
     "tutorial": ""
 }

@@ -35,16 +35,12 @@ repeat(15) {
 		} else if (ds_grid_get(map_er, xx, yy)) == "ocean" || (ds_grid_get(map_er, xx, yy)) == "water" {
 			if (ds_grid_get(map_er, xx, yy-2)) == "ground" {
 				yy -= 1;
-				show_debug_message("up");
 			} else if (ds_grid_get(map_er, xx+2, yy)) == "ground" {
 				xx += 1;
-				show_debug_message("right");
 			} else if (ds_grid_get(map_er, xx, yy+2)) == "ground" {
 				yy += 1;
-				show_debug_message("down");
 			} else if (ds_grid_get(map_er, xx-2, yy)) == "ground" {
 				xx -= 1;
-				show_debug_message("left");
 			} else {
 				break;	
 			}
