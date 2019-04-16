@@ -3,8 +3,8 @@ tile_size = sprite_get_width(sprWater) / 10;
 
 
 if (ds_exists(map_er, ds_type_grid)) {
-	for (i = 0; i < ds_grid_height(map_er); i++) {
-		for (j = 0; j < ds_grid_width(map_er); j++) {
+	for (i = 0; i < ds_grid_height(map_er) - 1; i++) {
+		for (j = 0; j < ds_grid_width(map_er) - 1; j++) {
 			if (i < ds_grid_height(map_er) && j < ds_grid_width(map_er) && j > 0 && i > 0) {
 				if (surface_exists(SurfaceController.map_surface)) {
 					if (ds_grid_get(map_er, j, i) == "ground") {
@@ -87,4 +87,7 @@ if (ds_exists(map_er, ds_type_grid)) {
 }
 
 
+instance_create_depth(0,0,10,GameController);
+ds_grid_destroy(map_base);
+//ds_grid_destroy(map_er);
 generation_state = generation.nothing;

@@ -6,8 +6,8 @@ show_debug_message("scrGenerateCA running "+string(times)+" times");
 if (MapGenerator.times >= 1000) show_message("this will take a few minutes");
 
 repeat(times) {
-	for (i = 0; i < ds_grid_height(map_base); i++) {
-		for (j = 0; j < ds_grid_width(map_base); j++) {
+	for (i = 0; i < ds_grid_height(map_base) - 1; i++) {
+		for (j = 0; j < ds_grid_width(map_base) - 1; j++) {
 			water_neighbors = scrFindCANeighbors(j, i, map_base);
 	
 			if (water_neighbors > 4) { 

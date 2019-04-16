@@ -1,6 +1,6 @@
 if (ds_exists(map_base, ds_type_grid)) {
-	for (i = ds_grid_height(map_base); i > 0; i--) {
-		for (j = 0; j < ds_grid_width(map_base); j++) {
+	for (i = ds_grid_height(map_base) - 1; i > 0; i--) {
+		for (j = 0; j < ds_grid_width(map_base) - 1; j++) {
 			switch (ds_grid_get(map_base, j, i)) {
 				case "water": 
 				draw_set_color(make_color_rgb(0, 174, 240));

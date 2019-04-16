@@ -7,8 +7,8 @@ repeat(25) {
 
 	while (!found) {
 		randomize();
-		startx = irandom(ds_grid_width(map_er));
-		starty = irandom(ds_grid_height(map_er));
+		startx = irandom(ds_grid_width(map_er) - 1);
+		starty = irandom(ds_grid_height(map_er) - 1);
 		if (ds_grid_get(map_er, startx, starty)) == "ground" {
 			xx = startx;
 			yy = starty;
@@ -53,8 +53,8 @@ repeat(25) {
 	}		
 }
 
-for (i = 0; i < ds_grid_height(map_er); i++) {
-	for (j = 0; j < ds_grid_width(map_er); j++) {
+for (i = 0; i < ds_grid_height(map_er) - 1; i++) {
+	for (j = 0; j < ds_grid_width(map_er) - 1; j++) {
 		randomize();
 		if (ds_grid_get(map_er, j, i) == "ground") {
 			if (ds_grid_get(map_er, j, i-1)) == "forest" {

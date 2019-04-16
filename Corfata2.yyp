@@ -71,11 +71,27 @@
             }
         },
         {
+            "Key": "35b216d7-24af-4229-b96b-c9e636e3e346",
+            "Value": {
+                "id": "67b1db6b-080d-42f3-b919-788ac42920d3",
+                "resourcePath": "objects\\objCastle\\objCastle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3e688e89-167d-486f-bd79-c51cf5bfac1f",
             "Value": {
                 "id": "49c3d881-5a02-4caf-b5ea-26ef886bd8d4",
                 "resourcePath": "scripts\\scrDrawErosion\\scrDrawErosion.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4976f9f9-6aa5-4adb-b572-611ddb71b189",
+            "Value": {
+                "id": "f8e20f79-455a-4ee9-a3c1-3b4f2d32e986",
+                "resourcePath": "sprites\\sprCastle\\sprCastle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -163,6 +179,14 @@
             "Value": {
                 "id": "009488f0-fa0f-4774-92c8-3c4aa52b94fa",
                 "resourcePath": "scripts\\array\\array.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8113b559-7bf9-4880-bcac-8fdcc9366080",
+            "Value": {
+                "id": "19a481fc-51e5-40bb-9051-3f6497aa7f05",
+                "resourcePath": "scripts\\scrFindSpace\\scrFindSpace.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -283,6 +307,14 @@
             "Value": {
                 "id": "ec905c1f-a8c4-4c75-9bd8-2c7509b5005f",
                 "resourcePath": "objects\\SurfaceController\\SurfaceController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b2182538-c617-4e80-857d-f13962930dd0",
+            "Value": {
+                "id": "d2840c93-f946-4976-a49b-e25feaaea04d",
+                "resourcePath": "objects\\objCamera\\objCamera.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -426,6 +458,7 @@
     "script_order": [
         "76feb1eb-76b7-4c06-b4ee-4391ea39f56c",
         "ced3ce54-e6a7-4bd5-8da2-0db230c128ed",
+        "8113b559-7bf9-4880-bcac-8fdcc9366080",
         "da017007-49fc-4af5-8e76-4c2f259c109f",
         "8f2f4ef7-2b34-4b86-88c6-9389ca8747fe",
         "8abb312d-9ca4-4abb-8639-52bf7cb6c0ee",

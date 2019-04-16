@@ -7,8 +7,8 @@ repeat(25) {
 
 	while (!found) {
 		randomize();
-		startx = irandom(ds_grid_width(map_er));
-		starty = irandom(ds_grid_height(map_er));
+		startx = irandom(ds_grid_width(map_er) - 1);
+		starty = irandom(ds_grid_height(map_er) - 1);
 		if (ds_grid_get(map_er, startx, starty)) == "ground" {
 			xx = startx;
 			yy = starty;

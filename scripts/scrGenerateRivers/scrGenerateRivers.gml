@@ -7,8 +7,8 @@ repeat(25) {
 
 	while (!found) {
 		randomize();
-		startx = irandom(ds_grid_width(map_er));
-		starty = irandom(ds_grid_height(map_er));
+		startx = irandom(ds_grid_width(map_er) - 1);
+		starty = irandom(ds_grid_height(map_er) - 1);
 		if (ds_grid_get(map_er, startx, starty)) == "ground" {
 			xx = startx;
 			yy = starty;
@@ -19,8 +19,7 @@ repeat(25) {
 	randomize();
 	general_direction = irandom(3);
 
-	while (!end_found) {
-		
+	while (!end_found) {	
 			if (general_direction == 0) { 
 				randomize();
 				move_direction = irandom(2);
@@ -66,11 +65,12 @@ repeat(25) {
 					end_found = true;
 					break;	
 				}
-		} else {
-		if (xx > ds_grid_width(map_er) || yy > ds_grid_height(map_er) || xx < 0 || yy < 0){
-			break;	
-		} else {
-			continue;
+			
+			} else {
+				if (xx > ds_grid_width(map_er) || yy > ds_grid_height(map_er) || xx < 0 || yy < 0) {
+					break;	
+				} else {
+					continue;
 			}
 		}
 	}		

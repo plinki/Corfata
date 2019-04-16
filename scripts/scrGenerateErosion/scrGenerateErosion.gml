@@ -27,8 +27,8 @@ for (i = border; i < ds_grid_height(map_er) - border; i++) {
 }
 
 //cellular automaton
-for (i = 0; i < ds_grid_height(map_er); i++) {
-	for (j = 0; j < ds_grid_width(map_er); j++) {
+for (i = 0; i < ds_grid_height(map_er) - 1; i++) {
+	for (j = 0; j < ds_grid_width(map_er) - 1; j++) {
 		water_neighbors = scrFindCANeighbors(j, i, map_er);
 	
 		if (water_neighbors > 4) { 
@@ -60,8 +60,8 @@ for (i = border; i < ds_grid_height(map_er) - border; i++) {
 }
 
 //cellular automaton
-for (i = ds_grid_height(map_er); i > 0; i--) {
-	for (j = ds_grid_width(map_er); j > 0; j--) {
+for (i = ds_grid_height(map_er) - 1; i > 0; i--) {
+	for (j = ds_grid_width(map_er) - 1; j > 0; j--) {
 		water_neighbors = scrFindCANeighbors(j, i, map_er);
 	
 		if (water_neighbors > 4) { 
@@ -82,8 +82,8 @@ scrFloodFill(0, 0, "ocean", "water");
 
 //Walk through tiles, and fill all the holes in the land
 //with water, which works since water != ocean
-for (i = 0; i < ds_grid_height(map_er); i++) {
-	for (j = 0; j < ds_grid_width(map_er); j++) {
+for (i = 0; i < ds_grid_height(map_er) - 1; i++) {
+	for (j = 0; j < ds_grid_width(map_er) - 1; j++) {
 		if (ds_grid_get(map_er, j, i) == "water") {
 			ds_grid_set(map_er, j, i, "ground");			
 		}
