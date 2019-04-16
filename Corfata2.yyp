@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "6c25d2c0-0560-4956-a384-29cda518210a",
+            "Value": {
+                "id": "6c36d4e8-cc4d-4917-b7d8-9e956b12d473",
+                "resourcePath": "objects\\CameraMovement\\CameraMovement.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "76feb1eb-76b7-4c06-b4ee-4391ea39f56c",
             "Value": {
                 "id": "009488f0-fa0f-4774-92c8-3c4aa52b94fa",

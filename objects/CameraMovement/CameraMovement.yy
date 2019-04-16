@@ -1,38 +1,38 @@
 {
-    "id": "4ca1e1bd-d92a-4b9e-b652-3589367d4517",
+    "id": "6c25d2c0-0560-4956-a384-29cda518210a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "GameController",
+    "name": "CameraMovement",
     "eventList": [
         {
-            "id": "69ef40de-56fb-4ff7-8fab-eee808941e32",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "4ca1e1bd-d92a-4b9e-b652-3589367d4517"
-        },
-        {
-            "id": "3f32e0b7-1d2b-40ce-95f0-b9c8a276c337",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
-            "eventtype": 8,
-            "m_owner": "4ca1e1bd-d92a-4b9e-b652-3589367d4517"
-        },
-        {
-            "id": "dd014a8f-d9f1-4e7f-8f39-5c3640f3ba29",
+            "id": "dea7a9b1-f040-4b4c-ace5-6fcdde9938cd",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "4ca1e1bd-d92a-4b9e-b652-3589367d4517"
+            "m_owner": "6c25d2c0-0560-4956-a384-29cda518210a"
+        },
+        {
+            "id": "c3cce4ee-bb0e-46b2-8ce6-736fc35e2650",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "6c25d2c0-0560-4956-a384-29cda518210a"
+        },
+        {
+            "id": "e68e9003-eb4e-4880-a4aa-1d74471e1c61",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "6c25d2c0-0560-4956-a384-29cda518210a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
