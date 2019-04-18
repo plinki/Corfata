@@ -247,6 +247,22 @@
             }
         },
         {
+            "Key": "8f959a4d-47dd-419e-9045-fbdc2b5143df",
+            "Value": {
+                "id": "fc19c665-5ed8-4188-b6ea-7be7be257daf",
+                "resourcePath": "sprites\\sprMapPlayer\\sprMapPlayer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9af84743-88aa-4d66-934d-0a1bae128286",
+            "Value": {
+                "id": "04364d54-dffc-400b-a38f-ca5c6ef08151",
+                "resourcePath": "objects\\WorldMapPlayer\\WorldMapPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9f146db0-4219-48de-9ad8-068389b58d1f",
             "Value": {
                 "id": "9c693e4f-65ea-4262-8192-bb49162a1609",
