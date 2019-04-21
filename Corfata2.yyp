@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00b92ae2-b8f0-447f-89bf-e61c1d12a761",
+            "Value": {
+                "id": "a22d8090-3909-4132-a176-eb6f4509e385",
+                "resourcePath": "scripts\\scrDrawTiles\\scrDrawTiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "00c22083-4a99-4661-a698-4ae0242c3261",
             "Value": {
                 "id": "30c759ac-7c66-4a2f-8f46-230f2c084ee1",
@@ -212,6 +220,14 @@
                 "id": "406349fc-ec98-4370-8815-bf0473d07b36",
                 "resourcePath": "scripts\\scrGenerateMountains\\scrGenerateMountains.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "855c0f7c-71b5-47b7-9c26-915cd421b5b3",
+            "Value": {
+                "id": "647556e3-e06a-4a8d-9851-67f8e38fe49a",
+                "resourcePath": "tilesets\\tsWorld\\tsWorld.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -407,6 +423,14 @@
             }
         },
         {
+            "Key": "d0b4629e-ac0f-4f12-88c3-2b0ddedbce89",
+            "Value": {
+                "id": "375a63c5-f0f2-413a-9ee6-c5769407d5d9",
+                "resourcePath": "sprites\\sprTileSetWorld\\sprTileSetWorld.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d52bf2fe-d336-4ac9-944e-1b3debf68c41",
             "Value": {
                 "id": "9a2b0b42-489f-41c4-891f-13ed9efc717c",
@@ -495,6 +519,7 @@
         "9f146db0-4219-48de-9ad8-068389b58d1f",
         "00c22083-4a99-4661-a698-4ae0242c3261",
         "3e688e89-167d-486f-bd79-c51cf5bfac1f",
+        "00b92ae2-b8f0-447f-89bf-e61c1d12a761",
         "b635e0fe-5bd3-438d-a381-0f86386cdaf7"
     ],
     "tutorial": ""

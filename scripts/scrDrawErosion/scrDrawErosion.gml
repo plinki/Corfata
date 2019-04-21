@@ -90,4 +90,4 @@ if (ds_exists(map_er, ds_type_grid)) {
 instance_create_depth(0,0,10,GameController);
 ds_grid_destroy(map_base);
 //ds_grid_destroy(map_er);
-generation_state = generation.nothing;
+scrDrawTiles()

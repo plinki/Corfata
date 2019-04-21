@@ -14,7 +14,8 @@
         "a0682e9a-d23e-4b09-816a-9658287d2a5e",
         "9f146db0-4219-48de-9ad8-068389b58d1f",
         "00c22083-4a99-4661-a698-4ae0242c3261",
-        "3e688e89-167d-486f-bd79-c51cf5bfac1f"
+        "3e688e89-167d-486f-bd79-c51cf5bfac1f",
+        "00b92ae2-b8f0-447f-89bf-e61c1d12a761"
     ],
     "filterType": "GMScript",
     "folderName": "Map Generation",
