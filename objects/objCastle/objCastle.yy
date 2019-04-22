@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "objCastle",
     "eventList": [
-        {
-            "id": "2d1e49d5-51c7-4e38-a348-6690d3ff3a30",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "35b216d7-24af-4229-b96b-c9e636e3e346"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
