@@ -46,6 +46,4 @@ for (i = 0; i < ds_grid_height(map_er) - 1; i++) {
 	}
 }
 
-instance_create_depth(0,0,10,GameController);
-ds_grid_destroy(map_base);
-scrDrawTiles();
+generation_state = generation.tiles;

@@ -11,7 +11,9 @@ enum generation {
 	deserts,
 	beaches,
 	erosion,
+	tiles,
 	nothing
+	
 }
 
 instance_create_depth(x, y, 10, SurfaceController);

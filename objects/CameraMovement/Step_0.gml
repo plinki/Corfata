@@ -69,7 +69,7 @@ if zoom_in == true {
 if zoom_out == true {
 	zoom_in = false;
 
-	if camera_get_view_height(camera) + current_zoom < 4000{
+	if camera_get_view_height(camera) + current_zoom < 3000 {
 		camera_set_view_pos(camera, 
 		camera_get_view_x(camera) + (((camera_get_view_x(camera) + (camera_get_view_width(camera) / 2)) - zoom_x )*-1 )*0.1 , 
 		camera_get_view_y(camera)  + (((camera_get_view_y(camera) + (camera_get_view_height(camera) / 2)) - zoom_y )*-1  )*0.1)

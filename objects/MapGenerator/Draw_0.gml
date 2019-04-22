@@ -11,6 +11,7 @@ switch (generation_state) {
 	case generation.deserts: scrGenerateDeserts(); break;
 	case generation.beaches: scrGenerateBeaches(); break;
 	case generation.ca: scrDrawCA(); break;
+	case generation.tiles: scrDrawTiles(); break;
 	case generation.nothing: break;
 }
 
