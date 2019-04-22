@@ -30,7 +30,9 @@ if MapGenerator.generation_state == generation.nothing && castles_generated <= 2
 	
 		}
 		
-		if free_space == 3 && collision_circle(startx*10, starty*10, 200, objCastle, false, true) == noone {
+		if free_space == 3
+		&& collision_circle(startx*10, starty*10, 200, objCastle, false, true) == noone
+		&& collision_circle(startx*10, starty*10, 200, objDungeon, false, true) == noone {
 			instance_create_depth(startx*10, starty*10, 6, objCastle);
 			found = true;
 			castles_generated ++;
@@ -40,33 +42,31 @@ if MapGenerator.generation_state == generation.nothing && castles_generated <= 2
 }
 
 
-
-
-//if (MapGenerator.generation_state = generation.nothing && castles_generated = false) {
-//	repeat(4) {
-//		var startx, starty, startx, starty;
-//		found = false;
-//		end_found = false;
-
-//		while (!found) {
-//			randomize();
-//			startx = irandom(ds_grid_width(MapGenerator.map_er));
-//			starty = irandom(ds_grid_height(MapGenerator.map_er));
-//			free_space = 0;
-//			if (ds_grid_get(MapGenerator.map_er,startx-10, starty) == "ground") free_space++;
-//			if (ds_grid_get(MapGenerator.map_er,startx+10, starty) == "ground") free_space++;
-//			if (ds_grid_get(MapGenerator.map_er,startx, starty-10) == "ground") free_space++;
-//			if (ds_grid_get(MapGenerator.map_er,startx, starty+10) == "ground") free_space++;
+if MapGenerator.generation_state == generation.nothing && dungeons_generated <= 10 {
+	
+	var startx, starty;
+	found = false;
+	end_found = false
+	
+	while (!found) {
+		randomize();
+		startx = irandom(ds_grid_width(MapGenerator.map_er)-1);
+		starty = irandom(ds_grid_height(MapGenerator.map_er)-1);
+		free_space = 0;
+		
+		if ds_grid_get(MapGenerator.map_er, startx, starty) != "water" && ds_grid_get(MapGenerator.map_er, startx, starty) != "ocean" {
 			
-//			if (ds_grid_get(MapGenerator.map_er, startx, starty) == "ground" 
-//			&& free_space >= 2 
-//			&& !collision_circle(MapGenerator.tile_size * startx + MapGenerator.starting_point_x,
-//			MapGenerator.tile_size * starty + MapGenerator.starting_point_y, 35, objCastle, false, true)) {
-//				instance_create_depth(MapGenerator.tile_size * startx + MapGenerator.starting_point_x, 
-//				MapGenerator.tile_size * starty + MapGenerator.starting_point_y, 6, objCastle);
-//				found = true;
-//				continue;
-//			}
-//		}
-//	} castles_generated = true;
-//}
+			if ds_grid_get(MapGenerator.map_er,startx, starty+1) == ds_grid_get(MapGenerator.map_er, startx, starty) free_space++;
+	
+		}
+		
+		if free_space == 1 
+		&& collision_circle(startx*10, starty*10, 200, objCastle, false, true) == noone
+		&& collision_circle(startx*10, starty*10, 200, objDungeon, false, true) == noone {
+			instance_create_depth(startx*10, starty*10, 6, objDungeon);
+			found = true;
+			dungeons_generated ++;
+	
+		}
+	}
+}

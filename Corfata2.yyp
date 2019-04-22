@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "862f50fc-2a58-43ba-a7d5-cbdab1de9c71",
+            "Value": {
+                "id": "f7beb5bd-8451-415a-864a-35826081831d",
+                "resourcePath": "objects\\objDungeon\\objDungeon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "86367b83-aca4-4bc2-8147-23b95b6c9444",
             "Value": {
                 "id": "67b93786-c6a0-4e6f-9c67-3fe8449c4c28",
@@ -427,6 +435,14 @@
             "Value": {
                 "id": "375a63c5-f0f2-413a-9ee6-c5769407d5d9",
                 "resourcePath": "sprites\\sprTileSetWorld\\sprTileSetWorld.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d4c903c5-24b9-4af5-84ee-8f9de8b11fb2",
+            "Value": {
+                "id": "f1d9c085-f5b7-47ff-ab8c-d72e48a94e9b",
+                "resourcePath": "sprites\\sprDungeonEntrance\\sprDungeonEntrance.yy",
                 "resourceType": "GMSprite"
             }
         },
