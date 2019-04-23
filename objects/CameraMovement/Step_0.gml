@@ -20,7 +20,7 @@ if mouse_check_button(mb_left) {
 
 
 //If player scrolls down, set zoom_out boolean to true, this triggers condition and changes camera size
-if mouse_wheel_down() {
+if mouse_wheel_down() && !zoom_in {
 	zoom_x = mouse_x;
 	zoom_y = mouse_y;
 	zoom_out = true;
@@ -30,7 +30,7 @@ if mouse_wheel_down() {
 	
 //If player scrolls up, set zoom_in boolean to true, this triggers condition and changes camera size
 //It also takes note of the mouse position when zooming, so it can move camera to this pos
-if mouse_wheel_up() {
+if mouse_wheel_up() && !zoom_out {
 	zoom_x = mouse_x;
 	zoom_y = mouse_y;
 	zoom_in = true;
@@ -39,12 +39,12 @@ if mouse_wheel_up() {
 
 //When the camera is zooming in, keep setting zoom_out to false so both conditions can't be true at the same time.
 if zoom_in == true {
-	zoom_out = false;
+
 
 //This works only with square (1:1) camera - if the size of it is lower than 200, make zooming in impossible
 //Please note I really don't remember how i made the code below, but it works and makes zooming in smooth, aswell as
 //takes note of the change in camera size, so the window doesnt fly around.
-	if camera_get_view_height(camera) - current_zoom > 200 {
+	if camera_get_view_height(camera) - current_zoom >= 450 {
 		camera_set_view_pos(camera, 
 		camera_get_view_x(camera) + (((camera_get_view_x(camera) + (camera_get_view_width(camera) / 2)) - zoom_x )*-1 )*0.1 , 
 		camera_get_view_y(camera)  + (((camera_get_view_y(camera) + (camera_get_view_height(camera) / 2)) - zoom_y )*-1  )*0.1)
@@ -57,19 +57,19 @@ if zoom_in == true {
 		current_zoom = current_zoom - 10;
 		if current_zoom <= 0 {
 			zoom_in = false;
-			current_zoom = 150;
+			current_zoom = 100;
 		}
 	}
 	else {
-		current_zoom = 150;
+		current_zoom = 100;
 		zoom_in = false;
 	}
 }
 
 if zoom_out == true {
-	zoom_in = false;
 
-	if camera_get_view_height(camera) + current_zoom < 3000 {
+
+	if camera_get_view_height(camera) + current_zoom <= 3300 {
 		camera_set_view_pos(camera, 
 		camera_get_view_x(camera) + (((camera_get_view_x(camera) + (camera_get_view_width(camera) / 2)) - zoom_x )*-1 )*0.1 , 
 		camera_get_view_y(camera)  + (((camera_get_view_y(camera) + (camera_get_view_height(camera) / 2)) - zoom_y )*-1  )*0.1)
@@ -82,11 +82,11 @@ if zoom_out == true {
 		current_zoom = current_zoom - 10;
 		if current_zoom <= 0 {
 			zoom_out = false;
-			current_zoom = 150;
+			current_zoom = 100;
 		}
 	}
 	else {
-		current_zoom = 150;
+		current_zoom = 100;
 		zoom_out = false;
 	}
 }

@@ -1,8 +1,8 @@
 {
-    "id": "4ff44f98-50f1-47b2-a407-2282a2f08fb9",
+    "id": "79b4ab8e-81ba-4297-bd40-f6c89c5142aa",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objGround",
+    "name": "ObjQuestButton",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "e82eaeda-7222-4f66-8fd4-717092bf3aa8",
+    "spriteId": "487b1356-861c-4d0d-bb17-7dace608cd47",
     "visible": true
 }

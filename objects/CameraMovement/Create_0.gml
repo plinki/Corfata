@@ -8,5 +8,5 @@ zoom_out = false;
 zoom_x = 0;
 zoom_y = 0;
 
-current_zoom = 150;
+current_zoom = 100;
 
