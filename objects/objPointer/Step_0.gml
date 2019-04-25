@@ -1,4 +1,4 @@
-if WorldMapPlayer.in_castle == false
+if WorldMapPlayer.inside == false
 	instance_destroy(id)
 	
 image_xscale = camera_get_view_width(view_camera[0])/450;

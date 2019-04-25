@@ -20,30 +20,30 @@ if is_moving = true {
 
 
 
-if mouse_check_button(mb_right) && !in_castle{
-	if place_meeting(mouse_x, mouse_y, objCastle) {
-		castle_id = instance_position(mouse_x, mouse_y, objCastle)
-		path_to_castle = true;		
+if mouse_check_button(mb_right) && !inside{
+	if place_meeting(mouse_x, mouse_y, Location) {
+		location_id = instance_position(mouse_x, mouse_y, Location)
+		path_to_location = true;		
 	}
-else path_to_castle = false;
+else path_to_location = false;
 }
 	
 	
-if path_to_castle && distance_to_object(castle_id) < 5 {
-		in_castle = true;
+if path_to_location && distance_to_object(location_id) < 5 {
+		inside = true;
 		image_alpha = 0;
-		instance_create_depth(castle_id.x + sprite_get_width(sprArrow)/2, castle_id.y + castle_id.sprite_height/-2, 5, objPointer)
-		castle_id.player_inside = true;
-		path_to_castle = false;
+		instance_create_depth(location_id.x + sprite_get_width(sprArrow)/2, location_id.y + location_id.sprite_height/-2, 5, objPointer)
+		location_id.player_inside = true;
+		path_to_location = false;
 }
 
 
-if in_castle == true {
+if inside == true {
 	if mouse_check_button(mb_right) {
-		if !place_meeting(mouse_x, mouse_y, castle_id) {
+		if !place_meeting(mouse_x, mouse_y, location_id) {
 			image_alpha = 1;
-			castle_id.player_inside = false;
-			in_castle = false;
+			location_id.player_inside = false;
+			inside = false;
 
 		}
 	}
