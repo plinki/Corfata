@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "0cff7885-62e1-4467-b7b8-003ad198a14d",
-            "Value": {
-                "id": "626d2e85-8c42-4d03-b6b8-282263a5f3d3",
-                "resourcePath": "sprites\\sprDungeon\\sprDungeon.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "100875f0-940c-4c77-ae0d-94dcc0af2e87",
             "Value": {
                 "id": "b4a78e15-f8e5-4f93-83cf-ecba023f31f8",
@@ -588,6 +580,22 @@
                 "id": "f574fb87-e4b8-445d-a6a4-cae2eda8a8ec",
                 "resourcePath": "views\\e89566e0-6794-45b8-b337-47b65e6217e6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e8e57d3a-5126-4026-9902-8a2bd8affda4",
+            "Value": {
+                "id": "5086d0af-9ee5-40a5-a3ee-5d3170f231cb",
+                "resourcePath": "tilesets\\tsDungeonRoof\\tsDungeonRoof.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "e94ff4af-8ad5-4702-92f4-a9d90609d532",
+            "Value": {
+                "id": "d3afde1e-2d46-4a01-a070-0c1f164a2b73",
+                "resourcePath": "sprites\\spr_testRoof\\spr_testRoof.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

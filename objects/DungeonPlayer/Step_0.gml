@@ -3,16 +3,22 @@ if (keyboard_check(ord("D")) or keyboard_check(ord("A")) or keyboard_check(ord("
 else
 	sprite_index = sprPlayerDungeonIdle;
 	
+if mouse_x > x 
+ image_xscale = 1;
+else
+ image_xscale = -1;	
 	
-direction_horizontal = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+	
+	
+direction_horizontal = keyboard_check(ord("D")) - keyboard_check(ord("A")) ;
 direction_vertical = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 
-if !place_meeting(x + direction_horizontal, y, objWall) 
-	x += direction_horizontal
+if !place_meeting(x + direction_horizontal* 1.3, y, objWall) 
+	x += direction_horizontal * 1.3
 
-if !place_meeting(x, y + direction_vertical, objWall)
-	y += direction_vertical
+if !place_meeting(x, y + direction_vertical* 1.3, objWall)
+	y += direction_vertical * 1.3
 
 
 
